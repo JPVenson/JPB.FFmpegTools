@@ -1,0 +1,22 @@
+{
+  "profiles": {
+    "JPB.AudioSubtitleExpander": {
+      "commandName": "Project"
+    },
+    "Profile 1": {
+        "commandName": "Project",
+        "commandLineArgs": "ASE_Mode=measure ASE_FfmpegDirectory=\"C:\\ffmpeg\"",
+        "environmentVariables": {
+            "ASE_SourceDirectory": "Z:\\Videos\\Store\\Series\\Star Trek - Deep Space Nine\\Season 2",
+            "ASE_TargetDirectory": "Z:\\Videos\\Upscaled\\PreMerged",
+            "ASE_OutputDirectory": "Z:\\Videos\\Upscaled\\Merged",
+            //"ASE_Copy_PositiveLangMatch": "ger;eng;deu;",
+            //"ASE_Copy_NegativeLangMatch": "*",
+            "ASE_Measure_Selectors": "VideoCodec:VideoStreams:CodecName;AudioCodec:AudioStreams:CodecName",
+            "ASE_Deinterlace_Codec": "hevc_nvenc",
+            "ASE_Deinterlace_Filter": "yadif_cuda",
+            "ASE_Deinterlace_Crf": "19"
+        }
+    }
+  }
+}
