@@ -1,0 +1,26 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": ".NET Launch (console)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/JPB.AudioSubtitleExpander/bin/Debug/net9.0/JPB.AudioSubtitleExpander.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/JPB.AudioSubtitleExpander",
+            "console": "internalConsole",
+            "stopAtEntry": false,
+            "internalConsoleOptions": "openOnSessionStart",            
+        },
+        {
+            "name": ".NET Attach",
+            "type": "coreclr",
+            "request": "attach",
+            "processId": "${command:pickProcess}"
+        }
+    ],
+    "env": {
+        "DOTNET_CLI_TELEMETRY_OPTOUT": "1"
+    }
+}
